@@ -1,0 +1,755 @@
+@charset "UTF=8";
+/* CSS Document */ 
+*{
+    box-sizing: border-box;
+}
+#container{
+    width:100vw;
+    margin: auto;
+}
+
+body{
+    background-color: rgb(91, 214, 25);
+    margin:0;
+}
+@font-face {
+  font-family: "BD Cartoon Shout";
+  src: url(BD_Cartoon_Shout.ttf) format(truetype);
+}
+
+.BDCartoonShout{
+   font-family: "BD Cartoon Shout";
+  src: url(BD_Cartoon_Shout.ttf) format(truetype);
+  font-size:50px;
+}
+
+h1{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding-top: 25px;
+    background-color: rgb(0, 105, 0);
+    display: block;
+    margin-bottom: auto;
+    padding-bottom: 15px;
+  font-family: "BD Cartoon Shout";
+  src: url(BD_Cartoon_Shout.ttf) format(truetype);
+  font-size:50px;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: rgb(0, 105, 0);
+  cursor: pointer;
+  background-color: rgb(134, 223, 253);
+}
+
+/* desktop nav */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+  background-color:rgb(134, 223, 253);
+  justify-content: center;
+  font-size:2.0rem;
+}
+
+nav li a {
+  display: block;
+  color: rgb(0, 105, 0);
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+nav li a:hover {
+  background-color: rgb(255, 255, 255);
+}
+
+.background {
+  width: 100%;               
+  min-height: 1080px;  
+  margin: 0;
+  padding: 0;
+  background-color: rgb(91, 214, 25);
+  background-image: url('images/background3.png');
+  background-position: center; 
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h2{
+   margin: auto;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+.bigfoot-container {
+  position: absolute;
+  display: flex;
+  top: 400px;
+  left: 730px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  visibility: hidden;
+}
+
+.bigfoot-text {
+  position:absolute;
+  top: 610px;
+  left: 1050px; 
+  background: white;
+  border: 3px solid rgb(91, 214, 25);
+  border-radius: 12px;
+  padding: 5px;
+  width: 220px;
+  text-align: center;
+}
+
+h4{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(89, 58, 46);
+}
+
+h3{
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: auto;
+}
+.cryptid-text {
+  position: absolute;
+  top: 700px;  
+  left: 615px;
+  background: white;
+  border: 3px solid rgb(89, 58, 46);
+  border-radius: 12px;
+  padding: 5px;
+  width: 700px;
+  text-align: justify;
+}
+
+p{
+    font-family:Arial, Helvetica, sans-serif
+}
+
+.containerfacts {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin: 0px auto;
+  max-width: 100vw;;
+  padding: 10px;             
+  background-color: rgb(91, 214, 25);  
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+
+.fact-box {
+  flex: 1;
+  background: rgb(134, 223, 253);
+  border: 5px solid rgb(89, 58, 46);
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+  perspective: 1000px;
+  cursor: pointer;
+}
+
+.fact-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  transform-origin: center;
+  will-change: transform;
+}
+
+.fact-box.flipped .fact-inner, .fact-box:focus-within .fact-inner{
+  transform: rotateY(180deg);
+}
+
+.fact-front,
+.fact-back {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  border-radius: 10px;
+  padding: 16px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+  -webkit-transform: translateZ(0); 
+  transform: translateZ(0);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.fact-front {
+  background-color: white;
+  color: black;
+  transform: rotateY(0deg);
+}
+
+.fact-back {
+  background-color: rgb(244, 196, 132);
+  color: rgb(89, 58, 46);
+  transform: rotateY(180deg);
+  font-size: 22px;
+}
+
+.fact-front *, .fact-back * {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  margin: 0;
+}
+
+.fact-box h3 {
+  margin-top: auto;
+  margin-bottom: auto;
+  padding: 15px;
+  font-size: 3.5em;
+  color: rgb(0, 105, 0);
+  text-align: center;
+ font-family: "BD Cartoon Shout";
+  src: url(BD_Cartoon_Shout.ttf) format(truetype);
+
+}
+
+footer{
+    background-color: rgba(134, 223, 253);
+    clear: both;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid;
+    border-color: rgb(134, 223, 253);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-items: center;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.container > div {
+  width: 250px;
+  height: 350px; /* Make it look more like a book */
+  border-radius: 12px;
+  overflow: hidden; /* Ensures rounded corners apply to image */
+  box-shadow: 3px 3px 6px rgba(0,0,0,0.3);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.container > div:hover {
+  transform: scale(1.05);
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+}
+
+.container img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  margin-top: 25px;
+}
+
+/* Optional: Add title overlay text if you still want the name visible */
+.container .title {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2em;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+
+
+.encyclopedia-intro {
+  max-width: 800px;
+  margin: 40px auto;
+  background-color: rgb(134, 223, 253);
+  border: 3px solid rgb(0, 105, 0);
+  border-radius: 15px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.encyclopedia-intro h1 {
+  font-family: 'BD Cartoon Shout', sans-serif;
+  font-size: 2.2rem;
+  color: rgb(255, 255, 255);
+  margin-bottom: 20px;
+  border-radius: 10px;
+  margin-top: 2px;
+}
+
+.encyclopedia-intro p {
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: rgb(89, 58, 46);
+}
+
+.container-bigfootreading {
+  position: absolute;
+  top: 150px; 
+  bottom: auto;
+  width: 40px; 
+  height: 80px; 
+  background-size: 150px auto;
+  transform-origin: top left;
+  z-index: -1; 
+}
+
+.container-footprints {
+  position: fixed;
+  top: 877px; /* moves footprints down so they align near the intro box */
+  left: -90px; /* shifts footprints to the left of the box */
+  width: 30px; /* controls how wide the footprint area is */
+  height: 60px; /* controls how tall the footprint area is */
+  background-size: 150px auto;
+  z-index: -1;  /* 👈 puts footprints underneath the intro box */
+  transform: rotate(-25deg);
+}
+
+.container-footprints2{
+  position: fixed;
+  top: 445px; /* moves footprints down so they align near the intro box */
+  left: -30px; /* shifts footprints to the left of the box */
+  width: 30px; /* controls how wide the footprint area is */
+  height: 60px; /* controls how tall the footprint area is */
+  background-size: 150px auto;
+  z-index: -1;  /* 👈 puts footprints underneath the intro box */
+  transform: rotate(-25deg);
+}
+
+.container-footprints3{
+ position: fixed;
+  top: 1px; /* moves footprints down so they align near the intro box */
+  left: 60px; /* shifts footprints to the left of the box */
+  width: 30px; /* controls how wide the footprint area is */
+  height: 60px; /* controls how tall the footprint area is */
+  background-size: 150px auto;
+  z-index: -1;  /* 👈 puts footprints underneath the intro box */
+  transform: rotate(-25deg);
+}
+
+.bug-intro{
+  max-width: 800px;
+  margin: 40px auto;
+  background-color: rgb(134, 223, 253);
+  border: 3px solid rgb(0, 105, 0);
+  border-radius: 15px;
+  padding: 30px;
+  text-align:left;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+  color: rgb(89, 58, 46);
+  font-size: large;
+}
+
+.bug-intro h1 {
+  font-family: 'BD Cartoon Shout', sans-serif;
+  font-size: 2.2rem;
+  color: rgb(255, 255, 255);
+  margin-bottom: 20px;
+  border-radius: 10px;
+  margin-top: 2px;
+}
+
+
+.bug-form {
+  background-color: rgb(244, 196, 132);
+  width: 80%;
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  color:rgb(89, 58, 46);
+}
+
+.bug-form h2 {
+  text-align: center;
+  color: rgb(89, 58, 46);
+  margin-bottom: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.25rem;
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+  background-color: rgb(89, 58, 46);
+  color: rgb(91, 214, 25);
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  margin-top: 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button:hover {
+  background-color: rgb(134, 223, 253);
+}
+
+.flex-container {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: stretch;
+  background-color: #f1f1f1;
+}
+
+.flex-container > div {
+  background-color: rgb(61, 141, 122);
+  color: white;
+  margin: 5px;
+  font-size: 18px;
+  padding: 10px 10px 0 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+button {
+  display: block;
+  width: fit-content;
+  margin: 10px auto;
+}
+
+.location-section {
+  text-align: left;       
+  margin: 20px 0;
+  padding-left: 20px;    
+}
+
+.location-section button {
+  display: inline-block;  
+  background-color: rgb(89, 58, 46);
+  color: rgb(91, 214, 25);
+  padding: 6px 14px;
+  font-size: 0.95rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.location-section button:hover {
+  background-color: rgb(134, 223, 253); 
+}
+
+.cryptid-container {
+display: flex;
+padding: 0 300px;
+flex-wrap: wrap;
+align-items: flex-start;
+justify-content: space-around;
+gap: 10rem;
+}
+
+.info{
+  flex:1;
+  margin-top:100px;
+  border: solid 5px;
+  border-radius: 10px;
+  border-color: rgb(134, 223, 253);
+  padding:20px;
+  margin: auto;
+  background-color: rgb(255, 255, 255);
+}
+
+.info h3{
+  font-family: 'BD Cartoon Shout', sans-serif;
+  font-size: 2.2rem;
+  color: rgb(0, 105, 0);
+}
+
+
+.info p {
+  font-family: Arial, Helvetica, sans-serif;
+  color:rgb(89, 58, 46);
+  font-size: large;
+}
+
+.info ul{
+  font-family: Arial, Helvetica, sans-serif;
+  color:rgb(89, 58, 46);
+  font-size: large;
+}
+
+.cryptid-img{
+  width: 100%;
+  max-width: 400px;
+  object-fit: cover;
+  vertical-align: middle;
+}
+
+.ui-accordion-header:hover {
+  background-color: rgb(134, 223, 253); /* lighter hover blue */
+}
+
+.ui-accordion-header.ui-state-active {
+  background-color: rgb(134, 223, 253); /* active tab color */
+  color: rgb(0, 105, 0);
+}
+
+.about-container{
+  display:flex;
+  flex-direction: row;
+  max-width: 1000px;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 40px auto;
+  background-color: rgb(134, 223, 253);
+  border: 3px solid rgb(0, 105, 0);
+  border-radius: 15px;
+  padding: 20px;
+  text-align: left;
+  flex-wrap: wrap;
+}
+
+.about-text{
+  width:500px;
+  font-family:Arial, Helvetica, sans-serif;
+  color: rgb(89, 58, 46);
+  font-size: large;
+}
+
+.about-text h2{
+  font-family: 'BD Cartoon Shout', sans-serif;
+  font-size: 2.0rem;
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 105, 0);
+  border-radius: 5px;
+  height: 50px;
+  padding: 8px;
+}
+
+.about-img {
+width: 300px;
+margin-top: -70px;
+flex: 0 0 auto;
+}
+
+.artist-container {
+  display:flex;
+  flex-direction: column;
+  max-width: 1000px;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 10px;
+  background-color: rgb(134, 223, 253);
+  text-align: left;
+  flex-wrap: wrap;
+}
+
+.artist {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 1.0rem;
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  font-family:Arial, Helvetica, sans-serif;
+  color: rgb(89, 58, 46);
+  font-size: large; 
+}
+
+.artist-img img {
+  border-radius: 10px;
+}
+
+.explore-container{
+  display:flex;
+  flex-direction: row;
+  max-width: 900px;
+  justify-content:left;
+  align-items: flex-start;
+  margin: 40px auto;
+  background-color: rgb(134, 223, 253);
+  border: 3px solid rgb(0, 105, 0);
+  border-radius: 15px;
+  padding: 20px;
+  text-align: left;
+  flex-wrap: wrap;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(89, 58, 46);
+  font-size:large;
+}
+
+.explore-container h1{
+  font-family: 'BD Cartoon Shout';
+  font-size: 2.0rem;
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 105, 0);
+  border-radius: 5px;
+  height: 50px;
+  padding: 8px;
+  width: 600px;
+  margin:auto;
+}
+
+.explore-container div{
+background-color: rgb(0, 105, 0);
+width:fit-content;
+margin:5px;
+padding: 10px;
+text-align:left;  
+font-size:medium;
+font-family: Arial, Helvetica, sans-serif;
+color:rgb(255, 255, 255);
+border-radius:10px;
+}
+
+.explore-container a{
+  color: rgb(255, 255, 255);
+}
+
+
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .menu-toggle {
+    display: block;              /* show hamburger */
+  }
+
+  #main-nav {
+    display: none;               /* hidden by default */
+    width: 100%;
+  }
+
+  #main-nav.open {
+    display: block;              /* shown when toggled */
+  }
+
+  #main-nav ul {
+    flex-direction: column;      /* stack links */
+    gap: 0;
+  }
+
+  #main-nav li a {
+    width: 100%;
+    padding: 0.75rem 1rem;
+  }
+
+  .site-header {
+    flex-wrap: wrap;             /* let nav go below logo & button */
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 600px) {
+  .bigfoot-container {
+    width: 60vw;
+    max-width: 200px;
+  }
+}
+
+@media (max-width: 1019px){
+		.container{width:90%;}
+		
+		.makeMeStack{
+			flex:100%;
+		}
+}
+
+@media (max-width: 768px) {
+  .container-footprints {
+    left: -100px;
+    top: 50px;
+    width: 250px;
+    height: 600px;
+    background-size: 100px auto;
+  }
+}
+
+@media (max-width: 900px){
+  .cryptid-container{
+    justify-content: center;
+    gap: 2rem;
+  }
+}
+
+
+@media (max-width: 600px){
+  .cryptid-container{
+    flex-direction: column;
+    align-items: center;
+    padding-inline: 1rem;
+    gap: 1.25rem;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .about-text,
+  .about-img {
+    width: 100%;
+    max-width: 100%;
+    flex-direction: column;
+  }
+
+  .about-text h2 {
+    text-align: left;
+    flex-direction: column;
+  }
+
+  .artist-container {
+    align-items:left;
+    flex-direction: column;
+     width:100%;
+  }
+
+  .artist{
+    text-align: left;
+    flex-wrap: wrap;
+  }
+}

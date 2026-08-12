@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cryptid Library</title>
+    <link rel="stylesheet" href="main.css">
+<body>
+    <div id="container">
+      
+    <header><h1 class="BDCartoonShout">The Cryptid Library</h1></header>
+    
+  <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav">
+    ☰
+  </button>
+
+ <nav id="main-nav">
+    <ul>
+      <li><a href="index.html"><b>Home</b></a></li>
+      <li><a href="library.html"><b>Library</b></a></li>
+      <li><a href="explore.html"><b>Explore More</b></a></li>
+      <li><a href="about.html"><b>About</b></a></li>
+      <li><a href="contact.html"><b>Bugs</b></a></li>
+    </ul>
+  </nav>
+
+<div class="container-bigfootreading">
+  <img src="images/bigfootreading.png" alt="Bigfoot Reading">
+</div>
+
+
+<section class="encyclopedia-intro">
+  <h1>Welcome to the Cryptid Library</h1>
+  <p>
+    Step into the world of myths, mysteries, and maybe-monsters!  
+    The <strong>Cryptid Library</strong> is your guide to the strange creatures whispered about in the shadows of forests, lakes, and moonlit skies.  
+    From the legendary Bigfoot to the eerie El Chupacabra, each entry tells a story, part folklore, part curiosity, and part adventure.  
+    So grab your flashlight and explore the legends that make our world a little weirder (and a lot more fun).
+  </p>
+</section>
+
+
+<div class="container">
+  
+  <div style="position: relative;">
+    <a href="bigfoot.html"><img src="images/bigfootbook.png" alt="Bigfoot"></a>
+    <div class="title">Bigfoot</div>
+  </div>
+
+   <div style="position: relative;">
+    <a href="cucuy.html"><img src="images/cucuybook.png" alt="El Cucuy"></a>
+    <div class="title">El Cucuy "Boogeyman"</div>
+  </div>
+
+  <div style="position: relative;">
+    <a href="werewolf.html"><img src="images/werewolfbook.png" alt="Werewolf"></a>
+    <div class="title">Werewolf</div>
+  </div>
+
+   <div style="position: relative;">
+  <a href="lochness.html"><img src="images/lochnessbook.png" alt="Lochness Monster"></a>
+    <div class="title">The Lochness Monster</div>
+  </div>
+
+   <div style="position: relative;">
+  <a href="chupacabra.html"><img src="images/chupacabrabook.png" alt="El Chupacabra"></a>
+    <div class="title">El Chupacabra</div>
+  </div>
+
+  <div style="position: relative;">
+  <a href="tatzelwurm.html"><img src="images/tatzelwurmbook.png" alt="Tatzelwurm"></a> 
+    <div class="title">Tatzelwurm</div>
+  </div>
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<footer>Copyright Jacqueline Bedson 2025</footer>
+
+
+
+<script>
+  const toggleBtn = document.querySelector('.menu-toggle');
+  const nav = document.querySelector('#main-nav');
+
+  toggleBtn.addEventListener('click', () => {
+    nav.classList.toggle('open');
+    const isOpen = nav.classList.contains('open');
+    toggleBtn.setAttribute('aria-expanded', isOpen);
+  });
+</script>
+</body>
+</html>

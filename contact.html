@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+</head>
+<body>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cryptid Encyclopedia</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div id="container">
+      
+    <header><h1 class="BDCartoonShout">The Cryptid Library</h1></header>
+
+  <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav">
+    ☰
+  </button>
+
+ <nav id="main-nav">
+    <ul>
+      <li><a href="index.html"><b>Home</b></a></li>
+      <li><a href="library.html"><b>Library</b></a></li>
+      <li><a href="explore.html"><b>Explore More</b></a></li>
+      <li><a href="about.html"><b>About</b></a></li>
+      <li><a href="contact.html"><b>Bugs</b></a></li>
+    </ul>
+  </nav>
+
+<div class="bug-intro">
+ <h1>🐛 Bugs</h1>
+    <p>There should be <strong>no bugs</strong> on this website. But if you <i>do</i> spot a mistake, a broken link, or something is acting weird, please let us know!</p>
+    <p><br>Bigfoot tries his best to keep everything running smoothly, but sometimes even he needs a little help.
+Use the form below to report any “bugs” or send us your awesome ideas for new cryptids or pages!</p>
+</div>
+
+
+
+<main>
+    <section class="bug-form">
+      <h2>Report a Bug or Send a Suggestion</h2>
+      <form action="#" method="post">
+        
+        <label for="name">Name (optional):</label>
+        <input type="text" id="name" name="name" placeholder="You can stay mysterious!">
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+        
+        <label for="page">Where did you find the bug?</label>
+        <select id="page" name="page">
+          <option value="home">Home Page</option>
+          <option value="encyclopedia">Encyclopedia</option>
+          <option value="map">Explore Page</option>
+          <option value="fun">About Page</option>
+        </select>
+        
+        <label for="message">Describe the bug or your suggestion:</label>
+        <textarea id="message" name="message" rows="5" placeholder="Tell us what happened..."></textarea>
+        
+        <button type="submit">🪲 <strong>Squash the Bug!</strong></button>
+      </form>
+    </section>
+ </main>
+
+   <div class="container-footprints">
+  <img src="images/footprints.png" alt="Footprints">
+</div>
+
+<div class="container-footprints2">
+  <img src="images/footprints.png" alt="Footprints">
+</div>
+
+<div class="container-footprints3">
+  <img src="images/footprints.png" alt="Footprints">
+</div>
+
+<footer>Copyright Jacqueline Bedson 2025</footer>
+
+
+
+
+
+<script>
+  const toggleBtn = document.querySelector('.menu-toggle');
+  const nav = document.querySelector('#main-nav');
+
+  toggleBtn.addEventListener('click', () => {
+    nav.classList.toggle('open');
+    const isOpen = nav.classList.contains('open');
+    toggleBtn.setAttribute('aria-expanded', isOpen);
+  });
+</script>
+
+</body>
+
+</html>

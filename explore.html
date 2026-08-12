@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore</title>
+</head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cryptid Encyclopedia</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div id="container">
+      
+   <header><h1 class="BDCartoonShout">The Cryptid Library</h1></header>
+   
+  <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav">
+    ☰
+  </button>
+
+ <nav id="main-nav">
+    <ul>
+      <li><a href="index.html"><b>Home</b></a></li>
+      <li><a href="library.html"><b>Library</b></a></li>
+      <li><a href="explore.html"><b>Explore More</b></a></li>
+      <li><a href="about.html"><b>About</b></a></li>
+      <li><a href="contact.html"><b>Bugs</b></a></li>
+    </ul>
+  </nav>
+
+<div class="explore-container">
+        <h1>Explore More</h1>
+    <p>Keep the adventure going! Here, you’ll find a collection of kid-friendly websites, cool facts, and fun videos that help you learn all about mysterious creatures from around the world. 
+        Whether you want to discover how legends began, explore famous sightings, or watch exciting animations, this page will guide you to safe, curious-minded resources.</p>
+<div><h3>“Climate Cryptids” <br>gallery from the U.S. Geological Survey</h3>
+    <p> Learn about ecosystems and <br>the environment through folklore.<br>This page
+    dives into a playful and<br>spooky side of science: illustrations that<br> pair
+    famous cryptids with real-world climate<br>change challenges. Click on the picture!</p>
+    <a href="https://www.usgs.gov/index.php/programs/climate-adaptation-science-centers/climate-illustrations#Cryptids"><img src="images/LochNessNoLogo.jpg" alt="Lochness" width="200px"></a>
+</div>
+
+
+<div><h3>YouTube Videos</h3>
+<p><a href="https://youtu.be/5VmgtP07HvM?si=N8rcaJG-S9mgP8tt">The Little Cryptids | Animated Short</a>
+</p>
+<p><a href="https://youtu.be/2aMOxTAUuH8?si=6h8G5NFpVamWALCi">Top 5 Bigfoot Sightings of All Time</a></p>
+
+<iframe width="400" height="250" src="https://www.youtube.com/embed/OcNiFZS5-vY?si=DPNDeTAzvvhWU8bI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+
+
+
+
+
+
+</div>
+
+
+
+ 
+
+<footer>Copyright Jacqueline Bedson 2025</footer> 
+
+
+<script>
+  const toggleBtn = document.querySelector('.menu-toggle');
+  const nav = document.querySelector('#main-nav');
+
+  toggleBtn.addEventListener('click', () => {
+    nav.classList.toggle('open');
+    const isOpen = nav.classList.contains('open');
+    toggleBtn.setAttribute('aria-expanded', isOpen);
+  });
+</script>
+
+</body>
+</html>
