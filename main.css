@@ -1267,3 +1267,220 @@ border-radius:10px;
 .library-page {
     background-color: rgb(255, 241, 190);
 }
+
+/* =========================================
+   CRYPTID FIELD FILE HEADING
+   ========================================= */
+
+.field-file-heading {
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 25px;
+}
+
+.field-file-number {
+    margin: 0 0 12px 0;
+    font-family: "BD Cartoon Shout";
+    font-size: 1.1rem;
+    color: rgb(89, 58, 46);
+    letter-spacing: 1px;
+}
+
+.field-file-heading h1 {
+    margin: 0;
+    padding: 0;
+    background: none;
+    color: rgb(0, 105, 0);
+    font-family: "BD Cartoon Shout";
+    font-size: 3rem;
+    line-height: 1;
+}
+
+/* =========================================
+   ATLAS CLASSIFICATION
+   ========================================= */
+
+.atlas-classification {
+    margin: 20px 0;
+    border: 2px solid rgb(89, 58, 46);
+    border-radius: 12px;
+    background-color: rgb(244, 196, 132);
+    overflow: hidden;
+}
+
+.classification-title {
+    padding: 8px;
+    background-color: rgb(0, 105, 0);
+    color: white;
+    text-align: center;
+    font-family: "BD Cartoon Shout";
+    font-size: 1.1rem;
+}
+
+.classification-items {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+}
+
+.classification-item {
+    flex: 1;
+    padding: 8px 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: rgb(89, 58, 46);
+    font-family: Arial, Helvetica, sans-serif;
+    border-right: 1px solid rgb(89, 58, 46);
+}
+
+.classification-item:last-child {
+    border-right: none;
+}
+
+.classification-icon {
+    font-size: 1.3rem;
+    margin-bottom: 2px;
+}
+
+.classification-item strong {
+    color: rgb(0, 105, 0);
+    font-size: 0.8rem;
+    margin-bottom: 3px;
+}
+
+.classification-item span:last-child {
+    font-size: 0.9rem;
+}
+
+/* =========================================
+   CRYPTID FIELD FILE SECTIONS
+   ========================================= */
+
+.cryptid-sections {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.cryptid-section {
+  margin-bottom: 10px;
+  border: 2px solid rgb(89, 58, 46);
+  border-radius: 10px;
+  background-color: white;
+  overflow: hidden;
+}
+
+/* Clickable heading */
+
+.cryptid-section summary {
+  position: relative;
+  padding: 12px 18px;
+  background-color: rgb(134, 223, 253);
+  color: rgb(0, 105, 0);
+  font-family: "BD Cartoon Shout";
+  font-size: 1.2rem;
+  cursor: pointer;
+  list-style: none;
+  transition: background-color 0.2s ease;
+}
+
+/* Hide browser's default triangle */
+
+.cryptid-section summary::-webkit-details-marker {
+    display: none;
+}
+
+/* Our custom arrow */
+
+.cryptid-section summary::after {
+  content: "+";
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+/* Change + to − when open */
+
+.cryptid-section[open] summary::after {
+    content: "−";
+}
+
+/* Hover */
+
+.cryptid-section summary:hover {
+  background-color: rgb(91, 214, 25);
+  color: white;
+}
+
+/* Content */
+
+.section-content {
+  padding: 18px 25px;
+  background-color: white;
+  color: rgb(89, 58, 46);
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+}
+
+/* Section introduction */
+
+.section-intro strong {
+  display: block;
+  margin-bottom: 8px;
+  color: rgb(0, 105, 0);
+  font-family: "BD Cartoon Shout";
+  font-size: 1.25rem;
+}
+
+/* Modern legend */
+
+.legend-note {
+  margin-top: 18px;
+  padding: 12px 16px;
+  background-color: rgb(244, 196, 132);
+  border-left: 6px solid rgb(0, 105, 0);
+  border-radius: 8px;
+}
+
+.legend-note-title {
+  color: rgb(0, 105, 0);
+  font-family: "BD Cartoon Shout";
+  font-size: 1.05rem;
+  margin-bottom: 5px;
+}
+
+/* Curiosity box */
+
+.curiosity-note {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  margin-top: 15px;
+  padding: 12px 15px;
+  background-color: rgb(134, 223, 253);
+  border: 2px solid rgb(0, 105, 0);
+  border-radius: 10px;
+  color: rgb(89, 58, 46);
+}
+
+.curiosity-note strong {
+  flex-shrink: 0;
+  color: rgb(0, 105, 0);
+  font-family: "BD Cartoon Shout";
+}
+
+/* Lists */
+
+.section-content ul {
+  margin: 5px 0;
+  padding-left: 25px;
+}
+
+.section-content li {
+  margin-bottom: 8px;
+}

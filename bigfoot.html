@@ -5,21 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bigfoot Page</title>
     <link rel="stylesheet" href="main.css">
-<link rel="stylesheet" href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css">
-  <link rel="stylesheet" href="/resources/demos/style.css">
-  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
-  <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
-  <script>
-  $( function() {
-    $( "#accordion" ).accordion({
-      collapsible: true
-    });
-  } );
-  </script>
+</head>
+
 <body>
     <div id="container">
       
-    <header><h1 class="BDCartoonShout">The Cryptid Library</h1></header>
+<header class="site-header">
+  <h1>The Cryptid Atlas</h1>
+  <p class="site-tagline">Welcome to the Cryptid Library</p>
+</header>
 
 <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav">
     ☰
@@ -35,6 +29,11 @@
     </ul>
   </nav>
 
+<div class="field-file-heading">
+    <p class="field-file-number">FIELD FILE #001</p>
+    <h1>BIGFOOT</h1>
+</div>
+
 <div class="cryptid-container">
     <div class="cryptid-img">
         <img src="images/bigfootidle.png" alt="Bigfoot">
@@ -42,62 +41,141 @@
     <div class="info">
         <h3>Bigfoot</h3>
         <p>Deep in the misty forests of the Pacific Northwest, Bigfoot roams the woods — quiet, shy, and a little bit curious. 
-            Though rarely seen, this gentle giant is a favorite in cryptid folklore and loves the sound of rustling leaves beneath his enormous feet.</p> 
-    <div id="accordion">
-  <h3>🧠 Origin & Legends</h3>
-  <div>
-    <p>Stories of Bigfoot go back centuries, inspired by Indigenous legends about large, hairy forest dwellers who lived in harmony with nature. 
-        Modern sightings began in the mid-1900s, when mysterious footprints were found near logging camps.</p>
-  </div>
-  <h3>🧾 Physical Description</h3>
-  <div>
-    <p>Bigfoot is said to stand between 7 to 10 feet tall, covered in thick brown hair with long arms and enormous footprints (some over 16 inches long!). 
-        Despite his size, many describe him as gentle and intelligent.</p>
-  </div>
-  <h3>👣 Sightings</h3>
-  <div>
-    <p>There have been thousands of reported encounters across North America — blurry photos, shaky videos, and eerie howls echoing through the trees. 
-        The most famous sighting is the Patterson–Gimlin film from 1967, showing a lumbering Bigfoot walking through a California forest.</p>
-  </div>
-  <h3>💬 Fun Facts</h3>
-  <div>
-<ul>
-      <li>Bigfoot’s favorite snacks are rumored to be berries and mushrooms.</li>
-      <li>Some believe he can communicate by knocking on trees.</li>
-      <li>In pop culture, he’s often shown as friendly and a little goofy — the ultimate forest neighbor!</li>
-      <li>Bigfoot’s footprint gave him his famous name, but he’s also called Sasquatch in many stories.</li>
-    </ul>
-  </div>
-</div>
- 
-</div>
+            Though rarely seen, this gentle giant is a favorite in cryptid folklore and loves the sound of rustling leaves beneath his enormous feet.</p>
+     <div class="atlas-classification">
+
+    <div class="classification-title">
+        ATLAS CLASSIFICATION
+    </div>
+
+    <div class="classification-items">
+
+        <div class="classification-item">
+            <span class="classification-icon">🌎</span>
+            <strong>REGION</strong>
+            <span>North America</span>
+        </div>
+
+        <div class="classification-item">
+            <span class="classification-icon">👣</span>
+            <strong>TYPE</strong>
+            <span>Humanoid</span>
+        </div>
+
+        <div class="classification-item">
+            <span class="classification-icon">❓</span>
+            <strong>STATUS</strong>
+            <span>Unconfirmed</span>
+        </div>
     </div>
 </div>
 
+<div class="cryptid-sections">
+
+<!-- ORIGIN & LEGENDS -->
+
+  <details open class="cryptid-section origin-section">
+    <summary>🌲 ORIGIN & LEGENDS</summary>
+      <div class="section-content">
+        <div class="section-intro">
+          <strong>Where does the legend begin?</strong>
+        <p> Stories of Bigfoot go back centuries, inspired by Indigenous
+            traditions about large, hairy forest dwellers who lived in
+            harmony with nature.
+        </p>
+        </div>
+
+
+    <div class="legend-note">
+      <div class="legend-note-title">
+        THE MODERN LEGEND
+      </div>
+        <p>
+          Modern Bigfoot sightings became especially famous in the
+          mid-1900s, when mysterious footprints were reported near
+          logging camps in the Pacific Northwest.
+        </p>
+      </div>
+
+    <div class="curiosity-note">
+      <strong>🔎 Keep Investigating!</strong>
+        <span>
+            Bigfoot stories come from many different cultures and regions.
+            Some describe a mysterious creature, while others tell stories
+            about beings connected to the wilderness.
+        </span>
+      </div>
+    </details>
+
+<!-- PHYSICAL DESCRIPTION -->
+
+<details class="cryptid-section">
+<summary>📜 PHYSICAL DESCRIPTION</summary>
+  <div class="section-content">
+    <p>
+      Bigfoot is said to stand between 7 to 10 feet tall, covered in
+      thick brown hair with long arms and enormous footprints
+      (some over 16 inches long!). Despite his size, many describe
+      him as gentle and intelligent.
+    </p>
+  </div>
+</details>
+
+<!-- SIGHTINGS -->
+
+<details class="cryptid-section">
+<summary>👣 SIGHTINGS</summary>
+  <div class="section-content">
+    <p> There have been thousands of reported encounters across North
+        America — blurry photos, shaky videos, and eerie howls echoing
+        through the trees. The most famous sighting is the
+        Patterson–Gimlin film from 1967, showing a lumbering Bigfoot
+        walking through a California forest.
+    </p>
+</div>
+</details>
+
+<!-- FUN FACTS -->
+
+<details class="cryptid-section">
+<summary>💬 FUN FACTS</summary>
+  <div class="section-content">
+    <ul>
+    <li>
+      Bigfoot's favorite snacks are rumored to be berries and mushrooms.
+    </li>
+    <li>
+      Some believe he can communicate by knocking on trees.
+    </li>
+    <li>
+      In pop culture, he's often shown as friendly and a little goofy —
+      the ultimate forest neighbor!
+    </li>
+    <li>
+      Bigfoot's footprint gave him his famous name, but he's also
+      called Sasquatch in many stories.
+    </li>
+    </ul>
+</div>
+</details>
+
+</div> <!-- closes .cryptid-sections -->
+</div> <!-- closes .info -->
+</div> <!-- closes .cryptid-container -->
+</div> <!-- closes #container -->
 
 
 
+<footer class="site-footer">
 
+    <h2>The Cryptid Atlas</h2>
 
+    <p>Stay Curious.</p>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<footer>Copyright Jacqueline Bedson 2025</footer>
+    <p class="copyright">
+        © 2026 Jacqueline Bedson · The Cryptid Atlas
+    </p>
+</footer>
 
 
 <script>
