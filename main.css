@@ -808,12 +808,11 @@ border-radius:10px;
     width: 92%;
     max-width: 1400px;
     margin: 25px auto;
-    padding: 20px 35px;
+    padding: 5px 25px;
     background-color: rgb(134, 223, 253);
     border: 3px solid rgb(0, 105, 0);
     border-radius: 18px;
     box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.25);
-
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -823,14 +822,14 @@ border-radius:10px;
 .welcome-content {
     flex: 1;
     text-align: left;
-    padding: 10px 20px;
+    padding: 5px 25px;
 }
 
 .welcome-content h2 {
     color: rgb(0, 105, 0);
     font-family: "BD Cartoon Shout";
     font-size: 2.5rem;
-    margin: 0 0 20px 0;
+    margin: 0 0 12px 0;
     text-align: center;
 }
 
@@ -845,16 +844,12 @@ border-radius:10px;
 .welcome-button {
     margin-top: 15px;
     padding: 12px 24px;
-
     background-color: rgb(0, 105, 0);
     color: white;
-
     border: none;
     border-radius: 10px;
-
     font-family: "BD Cartoon Shout";
     font-size: 1.1rem;
-
     cursor: pointer;
 }
 
@@ -863,11 +858,12 @@ border-radius:10px;
 }
 
 .welcome-image {
-    flex: 0 0 280px;
+    flex: 0 0 330px;
     text-align: center;
 }
 
 .welcome-image img {
+    width: 300px;
     max-width: 100%;
     height: auto;
 }
@@ -917,7 +913,6 @@ border-radius:10px;
     background-color: rgb(255, 241, 190);
     border: 3px solid rgb(89, 58, 46);
     border-radius: 15px;
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -929,53 +924,40 @@ border-radius:10px;
 .feature-art {
     width: 120px;
     height: 90px;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     font-size: 65px;
     margin-bottom: 5px;
 }
 
 .home-feature h3 {
     margin: 5px 0 8px 0;
-
     font-family: "BD Cartoon Shout";
     font-size: 1.6rem;
     color: rgb(0, 105, 0);
-
     text-align: center;
 }
 
 .home-feature p {
     margin: 0 auto 15px auto;
-
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1rem;
     line-height: 1.3;
-
     color: rgb(89, 58, 46);
-
     max-width: 300px;
 }
 
 .feature-button {
     margin-top: auto;
-
     padding: 10px 18px;
-
     background-color: rgb(0, 105, 0);
     color: white;
-
     border-radius: 8px;
-
     text-decoration: none;
-
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-size: 0.95rem;
-
     transition: transform 0.2s, background-color 0.2s;
 }
 
@@ -1009,16 +991,11 @@ border-radius:10px;
     width: 92%;
     max-width: 1400px;
     margin: 30px auto;
-
     padding: 15px 25px;
-
     background-color: rgb(255, 241, 190);
-
     border: 3px solid rgb(89, 58, 46);
     border-radius: 15px;
-
     box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.25);
-
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -1035,11 +1012,9 @@ border-radius:10px;
 
 .art-placeholder {
     min-height: 190px;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     font-size: 100px;
 }
 
@@ -1053,45 +1028,33 @@ border-radius:10px;
 
 .investigation-content h2 {
     margin: 0 0 5px 0;
-
     font-family: "BD Cartoon Shout";
     font-size: 1.6rem;
-
     color: rgb(0, 105, 0);
 }
 
 .investigation-content h3 {
     margin: 5px 0 0 0;
-
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1rem;
-
     color: rgb(89, 58, 46);
 }
 
 .investigation-content h1 {
     margin: 0;
-
     padding: 0;
-
     background: none;
-
     color: rgb(0, 105, 0);
-
     font-family: "BD Cartoon Shout";
     font-size: 2.4rem;
 }
 
 .investigation-content p {
     margin: 8px auto 12px auto;
-
     max-width: 500px;
-
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1rem;
-
     line-height: 1.3;
-
     color: rgb(89, 58, 46);
 }
 
@@ -1100,20 +1063,13 @@ border-radius:10px;
 
 .investigation-button {
     display: inline-block;
-
     padding: 9px 18px;
-
     background-color: rgb(0, 105, 0);
-
     color: white;
-
     border-radius: 8px;
-
     text-decoration: none;
-
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-
     transition: transform 0.2s, background-color 0.2s;
 }
 
@@ -1127,7 +1083,6 @@ border-radius:10px;
 
 .investigation-evidence {
     flex: 0 0 15%;
-
     display: flex;
     flex-direction: column;
     gap: 12px;
@@ -1137,19 +1092,13 @@ border-radius:10px;
 .evidence-placeholder {
     width: 110px;
     height: 75px;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     background-color: white;
-
     border: 2px solid rgb(89, 58, 46);
-
     transform: rotate(3deg);
-
     font-size: 35px;
-
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
 }
 
@@ -1198,25 +1147,18 @@ border-radius:10px;
 .site-header h1 {
     margin: 0;
     padding: 0;
-
     background: none;
-
     color: white;
-
     font-family: "BD Cartoon Shout";
     font-size: 3.5rem;
-
     line-height: 1;
 }
 
 .site-tagline {
     margin: 4px 0 0 0;
-
     color: rgb(91, 214, 25);
-
     font-family: "BD Cartoon Shout";
     font-size: 1.1rem;
-
     line-height: 1;
 }
 
@@ -1228,19 +1170,14 @@ border-radius:10px;
     width: 100%;
     margin-top: 30px;
     padding: 25px 20px;
-
     background-color: rgb(0, 105, 0);
-
     text-align: center;
-
     border-top: 4px solid rgb(134, 223, 253);
 }
 
 .site-footer h2 {
     margin: 0 0 5px 0;
-
     color: white;
-
     font-family: "BD Cartoon Shout";
     font-size: 2rem;
 }
@@ -1254,9 +1191,7 @@ border-radius:10px;
 
 .site-footer .copyright {
     margin-top: 15px;
-
     color: white;
-
     font-size: 0.85rem;
 }
 
