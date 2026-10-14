@@ -279,6 +279,8 @@ footer{
     border-color: rgb(134, 223, 253);
 }
 
+/*Library Page*/
+
 .container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -291,11 +293,12 @@ footer{
 
 .container > div {
   width: 250px;
-  height: 350px; /* Make it look more like a book */
+  height: 350px; /*Book style*/
   border-radius: 12px;
-  overflow: hidden; /* Ensures rounded corners apply to image */
+  overflow: hidden; /* rounded corners apply to image */
   box-shadow: 3px 3px 6px rgba(0,0,0,0.3);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  background-color:rgba(244, 196, 132)
 }
 
 .container > div:hover {
@@ -318,10 +321,10 @@ footer{
   width: 100%;
   text-align: center;
   font-weight: bold;
-  color: rgb(0, 105, 0);
+  color: rgba(255,255,255);
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.2em;
-   text-shadow: 2px 2px 4px rgba(155, 155, 155, 0.7);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.788);
 }
 
 
